@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css?family=EB+Garamond&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'EB Garamond', serif;
+    font-size: 1.1rem;
+}
+
+section {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.backgroundvid__div {
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+}
+
+.backgroundvid {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+.content {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.supreme {
+    width: auto;
+    height: 200px;
+    transition: 0.05s;
+}
+
+.supreme:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.content a {
+    position: absolute;
+}
+
+.wrapper {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "boven boven boven" "onder onder onder";
+    margin-left: 7%;
+}
+
+.container1, .container2, .container3 {
+    grid-area: boven boven boven;
+}
+
+.container4, .container5, .container6 {
+    grid-area: onder onder onder;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 300px;
+    margin: 16px;
+}
+
+.afbeelding {
+    width: 100%;
+    height: auto;
+}
+
+.buybutton {
+    height: 60px;
+    width: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(145, 0, 0);
+    color: white;
+    font-size: 1.3em;
+    text-decoration: none;
+    transition: 0.1s;
+    border-radius: 5px;
+}
+
+.buybutton:hover {
+    background-color: black;
+}
+
+.prijs {
+    margin-bottom: 5px;
+}
+
+.product {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}   
+
+.container-buy {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper-buy {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 1000px;
+    height: 700px;
+}
+
+.content-right {
+    margin-right: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.product-buy {
+    font-size: 1.7em;
+    margin-bottom: 20px;
+}
+
+.beschrijving-buy {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+}
+
+.prijs-buy {
+    margin-bottom: 10px;
+    font-size: 1.5em;
+}
+
+.afbeelding-buy {
+    width: 500px;
+}
+
+.buybutton-buy {
+    height: 60px;
+    width: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(145, 0, 0);
+    color: white;
+    font-size: 1.3em;
+    text-decoration: none;
+    transition: 0.1s;
+    border-radius: 5px;
+}
+
+.buybutton-buy:hover {
+    background-color: black;
+    cursor: pointer;
+}
+
+.bedankt {
+    font-size: 1.6em;
+    color: rgb(0, 179, 0);
+    display: none;
+}
